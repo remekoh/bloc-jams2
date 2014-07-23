@@ -156,16 +156,16 @@
     transition: all 100ms ease-in-out;
   }
  
-  &.no-animate {
-    .fill, .thumb {
-      transition: none;
+  &:active {
+   .fill, .thumb {
+     transition: none;
     }
   }
  
-  &:hover .thumb {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
+  &:hover .thumb, &:active .thumb {
+   width: 20px;
+   height: 20px;
+   margin-top: -10px;
+   margin-left: -10px;
   }
 }
